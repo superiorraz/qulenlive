@@ -4,38 +4,61 @@
   <meta charset="UTF-8" />
   <title>Qulen Base</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#e0f4ff" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      background: #000;
       overflow: hidden;
+      background-color: #e0f4ff; /* Perfect light blue */
+      font-family: sans-serif;
     }
-    body {
-      position: fixed;
-      inset: 0;
-    }
-    iframe {
+
+    .header {
+      width: 100%;
+      padding: 12px;
+      background: #ffffffdd;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #222;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 2;
       position: fixed;
       top: 0;
+    }
+
+    .embed-wrapper {
+      position: absolute;
+      top: 52px; /* below header */
       left: 0;
-      height: 100vh;
-      width: 100vw;
+      width: 100%;
+      height: calc(100% - 52px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
       border: none;
     }
   </style>
 </head>
 <body>
 
-  <iframe
-    src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
-    loading="lazy"
-    allowfullscreen
-    allow="fullscreen">
-  </iframe>
+  <div class="header">
+    Qulen Base Mint – Powered by Canva 🚀
+  </div>
+
+  <div class="embed-wrapper">
+    <iframe
+      loading="lazy"
+      src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
+      allowfullscreen
+      allow="fullscreen">
+    </iframe>
+  </div>
 
 </body>
 </html>
