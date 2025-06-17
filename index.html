@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Qulen Base</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: #f0f8ff; /* Optional: light blue */
+      width: 100%;
+      overflow: hidden;
+      background: #000; /* fallback in case embed fails */
     }
-    .canva-fullscreen {
-      position: absolute;
+    iframe {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
       border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <div class="canva-fullscreen">
-    <iframe src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
-            loading="lazy"
-            allowfullscreen="allowfullscreen"
-            allow="fullscreen">
-    </iframe>
-  </div>
+  <iframe
+    src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
+    allowfullscreen
+    loading="lazy"
+    allow="fullscreen">
+  </iframe>
 
 </body>
 </html>
