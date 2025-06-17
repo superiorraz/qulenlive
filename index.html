@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Qulen Base</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      background: #000;
       height: 100%;
       width: 100%;
-      background-color: #000;
       overflow: hidden;
     }
-    .canva-wrapper {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #000;
-    }
-    .canva-wrapper iframe {
-      width: 100%;
-      height: 100%;
-      max-width: 100vw;
-      max-height: 100vh;
+
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
       border: none;
-      aspect-ratio: 9 / 16;
-      object-fit: contain;
+      margin: 0;
+      padding: 0;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="canva-wrapper">
-    <iframe
-      src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
-      allowfullscreen
-      loading="lazy"
-      allow="fullscreen">
-    </iframe>
-  </div>
+  <iframe
+    src="https://www.canva.com/design/DAGl6eHaGgg/d942zq1F-yxMZo_d7jIFpw/view?embed"
+    allowfullscreen
+    loading="lazy"
+    allow="fullscreen">
+  </iframe>
 </body>
 </html>
